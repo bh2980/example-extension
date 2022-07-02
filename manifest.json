@@ -3,6 +3,7 @@
   "description": "My first Chrome Extension",
   "version": "0.0",
   "manifest_version": 3,
+  "options_page": "option.html",
   "background": {
     "service_worker": "background.js"
   },
