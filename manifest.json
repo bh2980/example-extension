@@ -1,0 +1,19 @@
+{
+  "name": "example-extension",
+  "description": "My first Chrome Extension",
+  "version": "0.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["https://www.google.com/*"]
+    }
+  ],
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
