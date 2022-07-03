@@ -12,3 +12,10 @@ google_logo.setAttribute(
   "srcset",
   "https://kmug.co.kr/data/file/design/1846294025_9XHdCjA0_dad474e4756ad4c062bd63047ee7ccf48f535ed1.png 1x, https://kmug.co.kr/data/file/design/1846294025_9XHdCjA0_dad474e4756ad4c062bd63047ee7ccf48f535ed1.png 2x"
 );
+
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+  //work!
+  console.log(request, sender);
+
+  sendResponse({ res: "success!" });
+});
